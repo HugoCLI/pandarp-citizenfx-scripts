@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #28B463;
+    --background-color: #151515;
+
+    --navbar-background-color: #202020;
+    --navbar-background-color-hover: #303030;
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+section {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 350px;
+    background: var(--background-color);
+    margin: 50px;
+    overflow: hidden;
+    max-height: 490px;
+    display: none;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+
+section>header {
+    display: flex;
+    height: 100px;
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+
+}
+
+section>header h1 {
+    font-family: 'Satisfy', cursive;
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+
+
+section>div {
+    background: var(--navbar-background-color);
+    overflow: hidden;
+}
+
+section .selector {
+    background: #101010;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+section .selector h5 {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section .scroll {
+    overflow-y: hidden;
+    max-height: 360px;
+}
+
+
+section .nav-item,
+section .nav-submit {
+    padding: 0 12.5px;
+
+    color: #fff;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+section .nav-item.active,
+section .nav-submit.active {
+    background: var(--navbar-background-color-hover);
+}
+
+section .nav-item.active footer,
+section .nav-submit.active footer {
+    color: #fff;
+}
+
+section .nav-submit {
+    color: var(--primary-color);
+
+    font-weight: 600;
+}
+
+section .nav-item footer,
+section .nav-submit footer {
+    font-size: 18px;
+    color: #aaa;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: right;
+    width: 50px;
+}
+
+section .nav-item footer i,
+section .nav-submit footer i {
+    font-size: 16px;
+}
+
+section .nav-item header,
+section .nav-submit header {
+    min-width: 200px;
+}
+
+section .nav-item div,
+section .nav-submit div {
+    width: 75px;
+    text-align: right;
+    color: var(--primary-color);
+    font-weight: 600;
+}

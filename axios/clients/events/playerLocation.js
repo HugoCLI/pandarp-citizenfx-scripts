@@ -1,0 +1,4 @@
+
+on('playerLocation', () => {
+    emitNet('playerRequestLocation')
+})

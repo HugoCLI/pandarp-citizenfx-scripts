@@ -1,0 +1,83 @@
+section {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section .notify {
+    background: #151515;
+    height: 60px;
+    transition: 250ms linear;
+    align-items: center;
+    white-space: nowrap;
+    border-radius: 5px;
+    display: grid;
+    opacity: 0;
+    width: 80px;
+    grid-template-columns: 60px auto;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+section .notify.hide {
+    width: 60px;
+}
+
+section .notify .icon {
+    display: inline-flex;
+    width: 60px;
+    height: 60px;
+    background: #9f5819;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+section .notify .text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    font-size: 14px;
+}
+
+section .barnui {
+    position: fixed;
+    left: 0;
+    right: 10%;
+    top: 10%;
+    bottom: 0;
+    height: 5px;
+    width: 200px;
+    display: none;
+    border-radius: 100px;
+    background: #303030;
+    margin: auto;
+    overflow: hidden;
+}
+
+section .barnui span {
+    display: flex;
+    background: #28B463;
+    height: 5px;
+    border-radius: 100px;
+    width: 0%;
+    animation: barnui 10s 1;
+}
+
+@keyframes barnui {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}

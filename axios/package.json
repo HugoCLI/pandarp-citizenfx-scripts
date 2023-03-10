@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fivem-mysql-async-js": "^0.1.2",
+    "mysql-async": "^1.1.0"
+  }
+}
